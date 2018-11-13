@@ -1,15 +1,15 @@
 import pandas as pd
 
 # TODO: Set weight1, weight2, and bias
-weight1 = 1
-weight2 = 1
-bias = -2
+weight1 = -1
+weight2 = -1.1
+bias = 1
 
 
 # DON'T CHANGE ANYTHING BELOW
 # Inputs and outputs
 test_inputs = [(0, 0), (0, 1), (1, 0), (1, 1)]
-correct_outputs = [False, False, False, True]
+correct_outputs = [True, False, True, False]
 outputs = []
 
 # Generate and check output
