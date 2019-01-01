@@ -1,0 +1,25 @@
+
+Test out other filters!
+You're encouraged to create other kinds of filters and apply them to see what happens! As an optional exercise, try the following:
+
+Create a filter with decimal value weights.
+Create a 5x5 filter
+Apply your filters to the other images in the images directory.
+
+
+
+
+# Create a custom kernel
+
+# 5x5 array for edge detection
+sobel_y = np.array([[ -2.0,-2.0, -4.0,-2.0, -2.0],
+                   [ 0.0, 0.0,0.0,0.0, 0.0],
+                   [ 2.0,2.0, 4.0, 2.0,2.0]])
+
+## TODO: Create and apply a Sobel x operator
+
+
+# Filter the image using filter2D, which has inputs: (grayscale image, bit-depth, kernel)
+filtered_image = cv2.filter2D(gray, -1, sobel_y)
+
+plt.imshow(filtered_image, cmap='gray')
